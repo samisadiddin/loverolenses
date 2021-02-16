@@ -9,7 +9,6 @@ body {
     box-sizing: border-box;
     background-color: #e9e2ce;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(90deg, #e8e2ce 20%,#ba8036 50%, #ceaa7a 70%);
@@ -22,10 +21,7 @@ body div {
     justify-content: center;
     text-align: center;
     margin-top: 10%;
-    background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.1));
+    background-color: #e098909c;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter:blur(5px);
     box-shadow: 0px 3px 15px #27272780;
