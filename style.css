@@ -3,18 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    background: linear-gradient( to left bottom,#d4e8bc 30%, #ba8036 50%, black 70%);
+}
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: linear-gradient( to left bottom,#d4e8bc 30%, #ba8036 50%, black 70%);
     background-size: contain;
-    
 }
 .card {
     width: 250px;
@@ -102,10 +102,10 @@ body .card a {
     }
     30% {
         opacity: 0;
-        transform: translateY(0px);
+        transform: rotateY(0deg);
     }
     100% {
         opacity: 100%;
-        transform: translateY(-10px);
+        transform: rotateY(360deg);
     }
 }
