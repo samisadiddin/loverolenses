@@ -115,7 +115,6 @@ nav{
 
 .card {
     width: 250px;
-    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,7 +259,7 @@ body div p {
 .thirdcard {
     position: relative;
     width: 250px;
-    height: 400px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     align-items: center;
