@@ -115,10 +115,11 @@ nav{
 
 .card {
     width: 250px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     text-align: center;
     margin-top: 15vh;
     background: linear-gradient(
@@ -143,6 +144,9 @@ body div h1 {
     margin: 20px 0px;
     color: #fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body div h2 {
+    
 }
 body div p {
     max-width: 80%;
@@ -245,6 +249,70 @@ body div p {
 }
 .secondcard a:hover{
     color: rgb(255, 255, 255);
+    background-color: rgba(66, 44, 23, 0.541);
+    transition: all .3s linear;
+}
+/* 2 */
+#thirdhtml {
+    background: #130d05;
+    height: 100%;
+}
+.thirdcard {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    margin-top: 15vh;
+    background: #e8e2cec4;
+    box-shadow: 0px 3px 15px #dadada80;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    animation: show 1.5s;
+}
+.thirdcard h1 {
+    color: #704d20;
+}
+.thirdcard h2 {
+    color: #382610;
+}
+.thirdcard p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #d4e8bc;
+}
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.oldprice{
+    opacity: .5;
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+}
+.thirdcard a {
+    position: absolute;
+    bottom: 10px;
+    width: 40%;
+    height: 30px;
+    line-height: 29px;
+    font-size: 16px;
+    margin: 20px 0px;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(170, 144, 119, 0.541);
+    color: rgb(66, 44, 23);
+}
+.thirdcard a:hover{
+    color: #d4e8bc;
     background-color: rgba(66, 44, 23, 0.541);
     transition: all .3s linear;
 }
