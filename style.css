@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html {
-    background: linear-gradient( to left bottom,#d4e8bc 30%, #ba8036 50%, black 70%);
+    background: linear-gradient( to right bottom,#d4e8bc 20%, #ba8036 40%, rgb(54, 54, 54) 60%);
     height: 100%;
 }
 body {
@@ -54,7 +54,7 @@ body div p {
     color: rgb(255, 243, 227);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body .card a {
+.card a {
     width: 40%;
     font-size: 16px;
     margin: 20px 0px;
@@ -64,6 +64,11 @@ body .card a {
     border: 1px solid;
     border-radius: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card a:hover{
+    background-color: rgba(170, 144, 119, 0.541);
+    color: rgb(66, 44, 23);
+    transition: all .3s linear;
 }
 .links {
     position: absolute;
@@ -91,11 +96,9 @@ body .card a {
     border-top: 1px solid rgba(44, 24, 1, 0.562);
     border-left: 1px solid rgb(44, 24, 1);
     box-shadow: 0px 1px 5px rgb(44, 24, 1);
-    
 }
 .links a:hover {
     box-shadow: 0px 0.5px 2px rgb(44, 24, 1);
-    
 }
 @keyframes show {
     0% {

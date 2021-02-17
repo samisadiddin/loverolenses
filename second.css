@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html {
-    background: linear-gradient( to left bottom,#d4e8bc 30%, #ba8036 50%, black 70%);
+    background: #ece4cc;
     height: 100%;
 }
 body {
@@ -25,7 +25,7 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 15vh;
-    background-color: #e098909c;
+    background: linear-gradient(to left top, #704d20, #704d207e);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter:blur(15px);
     box-shadow: 0px 3px 15px #27272780;
@@ -51,16 +51,21 @@ body div p {
     color: rgb(255, 243, 227);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body .card a {
+.card a {
     width: 40%;
     font-size: 16px;
     margin: 20px 0px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: rgba(66, 44, 23, 0.541);
     border: 1px solid;
     border-radius: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(170, 144, 119, 0.541);
+    color: rgb(66, 44, 23);
+}
+.card a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(66, 44, 23, 0.541);
+    transition: all .3s linear;
 }
 .links {
     position: absolute;
