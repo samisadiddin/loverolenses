@@ -7,12 +7,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #e9e2ce;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(90deg, #e8e2ce 20%,#ba8036 50%, #ceaa7a 70%);
+    background: linear-gradient( to left bottom,#d4e8bc 30%, #ba8036 50%, black 70%);
+    background-size: contain;
+    
 }
 .card {
     width: 250px;
@@ -21,13 +23,13 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 20vh;
     background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.3),
     rgba(255, 255, 255, 0.1));
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter:blur(15px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter:blur(10px);
     box-shadow: 0px 3px 15px #27272780;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -80,7 +82,7 @@ body .card a {
 }
 .links a {
     height: 50%;
-    width: 100px;
+    width: 90px;
     justify-content: space-between;
     color: rgb(44, 24, 1);
     text-decoration: none;
