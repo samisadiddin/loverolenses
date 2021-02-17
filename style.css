@@ -37,14 +37,15 @@ nav{
     padding-top: 5px;
 }
 .menu > ul {
+    width: 100px;
     list-style: none;
     background-color: #9b6622;
-    width: 100px;
     height: 60px;
+    display: flex;
 }
 .menu > ul > li {
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     height: 100%;
     width: 100%;
     line-height: 70px;
@@ -146,9 +147,6 @@ body div h1 {
     margin: 20px 0px;
     color: #fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-body div h2 {
-    
 }
 body div p {
     max-width: 80%;
