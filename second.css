@@ -3,15 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    background: linear-gradient( to left bottom,#d4e8bc 30%, #ba8036 50%, black 70%);
+    height: 100%;
+}
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #e9e2ce;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(90deg, #e8e2ce 20%,#ba8036 50%, #ceaa7a 70%);
+    background-size: contain;
 }
 .card {
     width: 250px;
@@ -20,7 +24,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 15vh;
     background-color: #e098909c;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter:blur(15px);
@@ -28,6 +32,7 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
+    animation: show 1.5s;
 }
 body div img {
     max-width: 100%;
@@ -36,7 +41,7 @@ body div h1 {
     max-width: 90%;
     font-size: 28px;
     margin: 20px 0px;
-    color: #866d45;
+    color: #fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body div p {
@@ -51,9 +56,9 @@ body .card a {
     font-size: 16px;
     margin: 20px 0px;
     text-decoration: none;
-    color: #c4b090;
+    color: rgb(255, 255, 255);
     background-color: rgba(66, 44, 23, 0.541);
-    border: 1px solid #c4b090;
+    border: 1px solid;
     border-radius: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -61,6 +66,44 @@ body .card a {
     position: absolute;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    line-height: 25px;
     flex-direction: row;
     top: 0;
+    background-color: rgba(255, 255, 255, 0.432);
+    height: 50px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    box-shadow: 0px 0.5px 5px black;
+}
+.links a {
+    height: 50%;
+    width: 90px;
+    justify-content: space-between;
+    color: rgb(44, 24, 1);
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid rgba(44, 24, 1, 0.562);
+    border-left: 1px solid rgb(44, 24, 1);
+    box-shadow: 0px 1px 5px rgb(44, 24, 1);
+    
+}
+.links a:hover {
+    box-shadow: 0px 0.5px 2px rgb(44, 24, 1);
+    
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+        transform: rotateY(0deg);
+    }
+    100% {
+        opacity: 100%;
+        transform: rotateY(360deg);
+    }
 }
