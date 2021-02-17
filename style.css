@@ -14,14 +14,14 @@ body {
     justify-content: center;
     background: linear-gradient(90deg, #e8e2ce 20%,#ba8036 50%, #ceaa7a 70%);
 }
-body div {
+.card {
     width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 30%;
     background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.3),
@@ -32,6 +32,7 @@ body div {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
+    animation: show 1.5s;
 }
 body div img {
     max-width: 100%;
@@ -50,7 +51,7 @@ body div p {
     color: rgb(255, 243, 227);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body div a {
+body .card a {
     width: 40%;
     font-size: 16px;
     margin: 20px 0px;
@@ -60,4 +61,49 @@ body div a {
     border: 1px solid;
     border-radius: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.links {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    line-height: 25px;
+    flex-direction: row;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.432);
+    height: 50px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    box-shadow: 0px 0.5px 5px black;
+}
+.links a {
+    height: 50%;
+    width: 100px;
+    justify-content: space-between;
+    color: rgb(44, 24, 1);
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid rgba(44, 24, 1, 0.562);
+    border-left: 1px solid rgb(44, 24, 1);
+    box-shadow: 0px 1px 5px rgb(44, 24, 1);
+    
+}
+.links a:hover {
+    box-shadow: 0px 0.5px 2px rgb(44, 24, 1);
+    
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(-10px);
+    }
 }

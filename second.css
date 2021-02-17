@@ -13,7 +13,7 @@ body {
     justify-content: center;
     background: linear-gradient(90deg, #e8e2ce 20%,#ba8036 50%, #ceaa7a 70%);
 }
-body div {
+.card {
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -22,8 +22,8 @@ body div {
     text-align: center;
     margin-top: 10%;
     background-color: #e098909c;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter:blur(5px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter:blur(15px);
     box-shadow: 0px 3px 15px #27272780;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -46,7 +46,7 @@ body div p {
     color: rgb(255, 243, 227);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body div a {
+body .card a {
     width: 40%;
     font-size: 16px;
     margin: 20px 0px;
@@ -56,4 +56,11 @@ body div a {
     border: 1px solid #c4b090;
     border-radius: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.links {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    top: 0;
 }
