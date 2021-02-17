@@ -17,6 +17,100 @@ body {
     justify-content: center;
     background-size: contain;
 }
+nav{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #ba8135;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+.logo img {
+    width: 150px;
+}
+.menu > ul {
+    list-style: none;
+    background-color: #9b6622;
+    width: 100px;
+    height: 60px;
+}
+.menu > ul > li {
+    text-align: center;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    line-height: 70px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: fantasy;
+}
+.menu > ul > li:hover{
+    background-color: #bb986a;
+    transition: all .4s;
+}
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #2e1c05;
+}
+
+.sub-content{
+    position: absolute;
+    width: 100px;
+    top: 60px;
+    overflow: hidden;
+    background-color: #9b6622;
+    max-height: 0px;
+}
+.sub-content a {
+    color: #fff;
+    text-decoration: none;
+    border-top: .1px solid white;
+}
+.sub-drop{
+    padding: 0;
+}
+.sub-drop ul {
+    width: 100%;
+}
+.sub-drop ul li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.sub-drop ul li a {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.sub-drop ul li:hover{
+    background-color: #bb986a;
+    transition: all .3s;
+}
+
+/*
+:FOCUS = ONCLICK
+.item:focus ~ .sub-content{
+    max-height: 200px;
+    transition: max-height .3s ease-in;
+    -webkit-transition: max-height .3s ease-in;
+    -moz-transition: max-height .3s ease-in;
+}
+*/
+.menu ul li:hover .sub-content{
+    max-height: 200px;
+    transition: max-height .3s ease-in;
+    -webkit-transition: max-height .3s ease-in;
+    -moz-transition: max-height .3s ease-in;
+}
+
 .card {
     width: 250px;
     display: flex;
@@ -106,10 +200,48 @@ body div p {
     }
     30% {
         opacity: 0;
-        transform: rotateY(0deg);
     }
     100% {
         opacity: 100%;
-        transform: rotateY(360deg);
     }
+}
+
+/* 2 */
+
+#secondhtml {
+    background: #ece4cc;
+    height: 100%;
+}
+.secondcard {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15vh;
+    background: linear-gradient(to left top, #704d20, #704d207e);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    box-shadow: 0px 3px 15px #27272780;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    animation: show 1.5s;
+}
+.secondcard a {
+    width: 40%;
+    font-size: 16px;
+    margin: 20px 0px;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(170, 144, 119, 0.541);
+    color: rgb(66, 44, 23);
+}
+.secondcard a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(66, 44, 23, 0.541);
+    transition: all .3s linear;
 }
